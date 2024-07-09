@@ -1,0 +1,37 @@
+Package: therMizer
+Type: Package
+Title: therMizer: Temperature-Dependent Rates in Mizer
+Version: 1.0.0
+Description: A set of functions that allows uers to incorporate
+    temperature-dependent rates in mizer.
+Maintainer: Romain Forestier <romain.forestier@utas.edu.au>
+Authors@R: c(person("Romain", "Forestier", email = 
+                    "romain.forestier@utas.edu.au",
+                    role = c("cre", "aut", "cph")),
+             person("Phoebe", "Woodworth-Jefcoats", email = 
+                    "phoebe.woodworth-jefcoats@noaa.gov",
+                    role = c("aut", "cph"),
+                    comment = c(ORCID = "0000-0001-9353-923X")))
+Encoding: UTF-8
+License: GPL-3
+LazyData: true
+Depends:
+    R (>= 3.1),
+    mizer (>= 2.3.0)
+Imports:
+    assertthat,
+    bslib,
+    dplyr,
+    ggplot2,
+    lubridate,
+    reshape2,
+    stringr
+Collate:
+  rates.R
+  realms.R
+  scale_temp_effect.R
+  therParams.R
+  plots.R
+  therMizer-package.R
+RoxygenNote: 7.2.1
+URL: https://github.com/sizespectrum/therMizer
